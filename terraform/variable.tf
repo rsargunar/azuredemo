@@ -2,7 +2,7 @@ variable "resource_group_name" {
   default = "demo-rg"
 }
 variable "location" {
-  default = "eastus"
+  default = "eastus2"
 }
 variable "vm_name" {
   default = "demo-vm"
