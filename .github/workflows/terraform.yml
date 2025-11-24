@@ -26,7 +26,9 @@ jobs:
         run: terraform -chdir=terraform validate
 
       - name: Terraform Plan
-        run: terraform -chdir=terraform plan
+        run: terraform -chdir=terraform plan \
+          -var "admin_password=${{ secrets.ADMIN_PASSWORD }}"
 
       - name: Terraform Apply
-        run: terraform -chdir=terraform apply -auto-approve
+        run: terraform -chdir=terraform apply -auto-approve \
+          -var "admin_password=${{ secrets.ADMIN_PASSWORD }}"
