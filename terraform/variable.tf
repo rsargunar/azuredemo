@@ -11,7 +11,7 @@ variable "admin_username" {
   default = "azureuser"
 }
 variable "admin_password" {
-  type = "Password@1234"
+  default = "Password@1234"
 }
 variable "v-net" {
   default = "demo-vnet"
