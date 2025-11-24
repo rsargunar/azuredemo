@@ -13,3 +13,9 @@ variable "admin_username" {
 variable "admin_password" {
   default = ${{ secret.admin_password }}
 }
+variable "v-net" {
+  default = "demo-vnet"
+}
+variable "sub-net" {
+  default = "demo-subnet"
+}
