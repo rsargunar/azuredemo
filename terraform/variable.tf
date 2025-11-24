@@ -11,7 +11,7 @@ variable "admin_username" {
   default = "azureuser"
 }
 variable "admin_password" {
-  default = ${{ secret.admin_password }}
+  default = ${{ secret.ADMIN_PASSWORD }}
 }
 variable "v-net" {
   default = "demo-vnet"
